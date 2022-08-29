@@ -1,7 +1,7 @@
 # estudos-web
 códigos desenvolvidos para web
 
-git remote add origin <nameRepository> // Adicionar repositório remoto
+git remote add origin "nameRepository" // Adicionar repositório remoto
 
 git add * // Adicionar os arquivos no projeto local
 
@@ -13,4 +13,4 @@ git checkout main // Trocar a branch
 
 git pull origin main // Puxar as alterações feitas no repositório
 
-xdg-open <arquivo HTML>.html
+xdg-open "arquivo HTML".html
