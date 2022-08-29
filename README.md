@@ -12,3 +12,5 @@ git push origin main // Enviar alterações para o repositório
 git checkout main // Trocar a branch
 
 git pull origin main // Puxar as alterações feitas no repositório
+
+xdg-open <arquivo HTML>.html
