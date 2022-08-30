@@ -17,36 +17,54 @@
 
         // THROW, TRY, CATCH
 
-        function myname(name){
-            if(name.length == 0){
-                throw 'nome obrigatório';
-            }else{
-                console.log('nome foi preenchido');            
-                console.log(name.length);            
+        // function myname(name){
+        //     if(name.length == 0){
+        //         throw 'nome obrigatório';
+        //     }else{
+        //         console.log('nome foi preenchido');            
+        //         console.log(name.length);            
+        //     }
+        // }
+
+        // try{
+        //     myname("");        
+        // }catch(e){
+        //     console.log(e);
+        // }
+
+
+        // function verdadeiro(valor){
+        //     if(valor){
+        //         console.log('correto');
+        //     }else{
+        //         throw 'deve ser verdadeiro';
+        //     }
+        // }
+
+        // try{
+        //     verdadeiro(false)
+        // }catch(e){
+        //     console.log(e);
+        // }
+
+        // FOR
+
+        for(let i = 0; i< 10; i++){
+            if(i == 5){
+                continue
+            }
+            console.log(i)
+            if(i == 9){
+                break
             }
         }
 
-        try{
-            myname("");        
-        }catch(e){
-            console.log(e);
+        let i = 124
+        while( i > 10){
+            console.log(i);
+            i--
         }
 
-
-        function verdadeiro(valor){
-            if(valor){
-                console.log('correto');
-            }else{
-                throw 'deve ser verdadeiro';
-            }
-        }
-
-        try{
-            verdadeiro(false)
-        }catch(e){
-            console.log(e);
-        }
-        
     </script>
 </head>
 <body>
