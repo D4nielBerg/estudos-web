@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //OPERADOR TERNÁRIO
+        // let pao = false;
+        // let queijo = true;
+        // const niceBreakFast = pao && queijo ? 'bom café' : 'café ruim';
+        // console.log(niceBreakFast);
+
+        
+
+        // THROW, TRY, CATCH
+
+        function myname(name){
+            if(name.length == 0){
+                throw 'nome obrigatório';
+            }else{
+                console.log('nome foi preenchido');            
+                console.log(name.length);            
+            }
+        }
+
+        try{
+            myname("");        
+        }catch(e){
+            console.log(e);
+        }
+
+
+        function verdadeiro(valor){
+            if(valor){
+                console.log('correto');
+            }else{
+                throw 'deve ser verdadeiro';
+            }
+        }
+
+        try{
+            verdadeiro(false)
+        }catch(e){
+            console.log(e);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
