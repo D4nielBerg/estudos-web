@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // TRANSFORMAR NOTAS DOS ALUNOS EM LETRAS DE ACORDO COM OS ACERTOS
+        function notas(nota){
+            if(nota >= 90 && nota <= 100){
+                boletim = 'A';
+            }else if(nota >= 80 && nota <= 89){
+                boletim = 'B';
+            }else if(nota >= 70 && nota <= 79){
+                boletim = 'C';
+            }else if(nota >= 60 && nota <= 69){
+                boletim = 'D';
+            }else if(nota <=60 && nota >=0){
+                boletim = 'F';
+            }else{
+                console.log('nota inválida');
+            }
+            console.log(boletim);
+        }
+
+        notas(50);
+        notas(89);
+        notas(-13);
+        notas(91);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

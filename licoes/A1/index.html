@@ -49,20 +49,47 @@
 
         // FOR
 
-        for(let i = 0; i< 10; i++){
-            if(i == 5){
-                continue
-            }
-            console.log(i)
-            if(i == 9){
-                break
-            }
+        // for(let i = 0; i< 10; i++){
+        //     if(i == 5){
+        //         continue
+        //     }
+        //     console.log(i)
+        //     if(i == 9){
+        //         break
+        //     }
+        // }
+
+        // let i = 124
+        // while( i > 10){
+        //     console.log(i);
+        //     i--
+        // }
+
+
+        // FOR OF
+
+        // let names = ['Daniel', 'Marcos', 'Lucas'];
+        // let word = "Mugiwara";
+
+        // for(let char of word){
+        //     console.log(char);
+        // }
+
+        // for(let name of names){
+        //     console.log(name);
+        // }
+
+        // FOR IN
+
+        person = {
+            name: 'Daniel',
+            age: 17,
+            weight: 56
         }
 
-        let i = 124
-        while( i > 10){
-            console.log(i);
-            i--
+        for(let property in person){
+            console.log(property);
+            console.log(person[property]);
         }
 
     </script>

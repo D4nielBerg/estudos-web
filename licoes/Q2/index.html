@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // SISTEMA DE GASTOS FAMILIAR
+
+        familia = {
+            despesas: [21,24,12,14,42,12],
+            receitas: [21,24,12,42,12, 12, 12112]
+        }
+
+        function cacularSaldo(){
+            let deve = 0;
+            let tem = 0;
+            for(let property in familia.despesas){
+                deve += familia.despesas[property];
+                console.log(familia.despesas[property]);
+            }
+
+            for(let property in familia.receitas){
+                tem += familia.receitas[property];
+                console.log(familia.receitas[property]);
+            }
+
+            let resultado = tem - deve;
+            console.log(resultado.toFixed())
+            let descricao1 = resultado > 0;
+            let descricao2 = resultado < 0;
+
+            if(descricao1){
+                console.log('saldo positivo');
+            }else if(descricao2){
+                console.log('Saldo negativo');
+            }else{
+                console.log('Saldo nulo');
+            }
+        }
+
+        cacularSaldo();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
