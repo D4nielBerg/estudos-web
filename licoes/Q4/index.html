@@ -44,9 +44,46 @@
     ];
 
     const totalCategories = booksByCategory.length;
-    
-    // comentario
+    function categoryAndBook(){
 
+        for(let category of booksByCategory){
+            console.log(category.category);
+            console.log(category.books.length);        
+        }
+    }
+        
+    function totalAuthors(){
+        let authors = [];
+        for(let category of booksByCategory){
+            for(let books of category.books){
+                if(authors.indexOf(books.author) == -1){
+                    authors.push(books.author);     
+                }
+            }
+        }
+        console.log("Número de autores:", authors.length)
+    }
+
+    function booksAuthor(author){
+        book = [];
+        for(let category of booksByCategory){
+            for(let books of category.books){
+                if(books.author == author){
+                    book.push(books.title);
+                }
+            }
+        }
+        if(book.length){
+            console.log(`Estes são os livros de ${author}: ${book.join(", ")}`);
+        }else{
+            console.log("Não existem livros desse autor na biblioteca");
+        }
+    }
+
+    totalAuthors();
+    categoryAndBook();
+    booksAuthor("Augusto Cury");
+    
 
     </script>
 </head>
