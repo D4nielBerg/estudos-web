@@ -1,0 +1,53 @@
+/*REFERENCIAR ELEMENTO DENTRO DE OUTRO*/
+
+body article h2{
+    color: red;
+}
+
+/*CHILD COMBINATOR = PEGA O FILHO DIRETO DO ELEMENTO NA HIERARQUIA*/
+
+body > ul > li{
+    color: green;
+}
+
+/*ADJACENTE SIBLING COMBINATOR*/
+
+button + button{
+    margin-left: 32px;
+}
+
+/*GENERAL SIMBLING COMBINATOR*/
+
+div > h1 ~ p{
+    color: pink;
+}
+
+/*PSEUDO-SELETORES*/
+
+/*FIRST-CHILD*/
+
+body>span>ul li:first-child{
+    color: purple;
+}
+
+/*NTH-OF-TYPE()*/
+
+[id="textos"]>p:nth-of-type(2){
+    color: blue;
+}
+
+/*NTH-CHILD() INFORMAR NÚMEROS OU ODD(ÍMPARES) EVEN(PARES)*/
+
+[id="textos"]> p:nth-child(odd){
+    color:tomato;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+input:focus{
+    border-color: red;
+    background-color: green;
+}
