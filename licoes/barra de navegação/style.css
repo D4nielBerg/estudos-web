@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    color: black;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+
+
+nav{
+    display: flex;
+    gap: .8rem;
+    
+}
+
+ul{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    background-color: black;
+    color:wheat;
+}
+

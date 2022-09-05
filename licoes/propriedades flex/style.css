@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+aside{
+    background-color: greenyellow;
+    flex: 1;
+}
+
+main{
+    background-color: aqua;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main section:nth-child(2){
+    background-color: yellow;
+    flex: 1;
+}
+
+main section:nth-child(3){
+    background-color: orangered;
+    flex: 1;
+}
+
+main section:nth-child(4){
+    background-color: palevioletred;
+    flex: 1;
+    order: -1;
+}
+
+.page{
+    display: flex;
+    min-height: 100vh;
+}
+
+main span{
+    order: -2;
+}
+
