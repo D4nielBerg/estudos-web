@@ -1,0 +1,10 @@
+button{
+    display: flex;
+    color: rgb(82, 156, 252);
+    background-color: lightblue;
+    border: none;
+    margin: 1rem;
+    padding: .8rem;
+    border-radius: 1.3rem;
+    gap: .4rem;
+}

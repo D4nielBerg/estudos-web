@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+.page{
+    border: solid 1px red;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+aside{
+    width: 25%;
+    border: solid 1px blue;
+    
+}
+
+main{
+    flex-grow: 1;
+    border: solid 1px green;
+}

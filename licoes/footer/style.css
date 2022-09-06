@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+.tela{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+footer{
+    background-color: wheat;
+    align-items: center;
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+}
