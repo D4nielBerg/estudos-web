@@ -8,16 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
+        .vermelho{
+            background-color: red;
+        }
+    </style>
+
 </head>
 <body>
 
+   
+    <button onclick="clicar();">ENVIAR</button>
     <h1>olá devs</h1>
-    <h2></h2>
+    <h2 id="h2"></h2>
     <script>
         let h1 = document.querySelector('h1');
         let h2 = document.querySelector('h2');
-        h2.innerText = ' Hello my friend'
+        // h2.innerText = ' Hello my friend'
         
+        h2.innerHTML = "<a href='manipular.html'>home</a>"
+        console.log(h2.getAttribute('id'));
+        h2.removeAttribute('id');
+        h1.setAttribute('onclick', 'clicar();');
+
+        body = document.querySelector('body')
+        // body.style.backgroundColor = 'gray';
+        function clicar(){
+            body.classList.toggle('vermelho');
+            
+        }
     </script>
 </body>
 </html>
