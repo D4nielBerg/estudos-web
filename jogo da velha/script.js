@@ -58,7 +58,7 @@ function verificarGame(){
         venceu = true;
      }else if(velha[0][1] == velha[1][1] && velha[1][1] == velha[2][1]){
         venceu = true;
-     }else if(velha[0][2] == velha[1][1] && velha[1][1] == velha[2][0]){
+     }else if(velha[0][2] == velha[1][2] && velha[1][2] == velha[2][2]){
         venceu = true;
      }else if(velha[0][0] == velha[1][1] && velha[1][1] == velha[2][2]){
         venceu = true;
