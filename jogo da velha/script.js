@@ -62,20 +62,47 @@ function verificarGame(){
         venceu = true;
      }else if(velha[0][0] == velha[1][1] && velha[1][1] == velha[2][2]){
         venceu = true;
-     }else if(velha[2][2] == velha[1][1] && velha[1][1] == velha[2][0]){
+     }else if(velha[0][2] == velha[1][1] && velha[1][1] == velha[2][0]){
         venceu = true;        
      }
      if(venceu){        
-        jogador1 == true ? alert('JOGADOR 1 VENCEU') : alert('JOGADOR 2 VENCEU');
+        jogador1 == true ? fimJogo('Jogador 1 venceu') : fimJogo('Jogador 2 venceu');
             
     }else if(cliques == 9){
-        alert('EMPATE');
+        fimJogo('Empate!');
     }else{
         jogador1 == true ? jogador1 = false : jogador1 = true;
+        mudarJogador()
     }
-    console.log(venceu);
+    
     
 }
 
+function mudarJogador(mensagem){
+    let j1 = document.querySelector('#j1');
+    let j2 = document.querySelector('#j2');
+
+    j1.classList.toggle('colorGreen');
+    j2.classList.toggle('colorGreen');
+}
+
+function fimJogo(mensagem){
+    let div = document.createElement('div');
+    div.setAttribute('class', 'popUp')
+
+    let p = document.createElement('p');   
+    p.textContent = mensagem;
+
+    let botao  = document.createElement('button');
+    botao.textContent = 'Reiniciar';
+    botao.setAttribute('onclick', 'reiniciar();')
+    div.append(p);
+    div.append(botao);
+    document.body.prepend(div);
+}
+
+function reiniciar(){
+   document.location.reload()
+}
 
 createGame();
